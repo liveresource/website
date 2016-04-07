@@ -1,4 +1,4 @@
-# LiveResource website
+# LiveResource Website
 
 The website is live here: [http://liveresource.org/](http://liveresource.org)
 
