@@ -1,0 +1,9 @@
+# Site settings
+title: LiveResource
+description: > # this means to ignore newlines until "baseurl:"
+  Protocol specification and JavaScript reference library for receiving live updates of web resources.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://liveresource.org" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
