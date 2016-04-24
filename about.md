@@ -3,9 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
-LiveResource is produced by [Fanout, Inc][fanout].
+This project was created by [Fanout][fanout]. We believe in the power of APIs, and we advocate building APIs that are capable of pushing data in realtime.
 
-At Fanout, we believe in the power of APIs, and we advocate building APIs that are capable of pushing data in realtime. Over the past few years, what we've noticed is that realtime APIs are often difficult to consume on the client-side due to the lack of client libraries. Many API providers do not produce client libraries at all, and the API community tends to be skeptical about generic/generated clients.
+Over the past few years, we've observed that realtime APIs are often difficult to consume due to the lack of client libraries. In fact, many API providers do not produce client libraries at all. This may be fine for conventional REST APIs, but it often presents a usability problem with APIs that push data.
 
 We think the consumption of realtime APIs ought to be made easier, on par with frameworks like Firebase or Meteor (or at least as close as we can get). In order to achieve this, we need to define baseline standards that make it possible to create common client libraries.
 
