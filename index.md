@@ -34,13 +34,13 @@ Content-Type: application/json
 
 For example, the `value-wait` link indicates that it's possible to make a GET request that hangs open until the value changes (this is known as long-polling). The `multiplex-socket` link is for WebSocket connectivity. Versioning is handled using ETags.
 
-What's nice about LiveResource's long-polling mechanism is that it is simple and stateless. It's just a GET request with `If-None-Match` and `Wait` headers:
+What's nice about LiveResource's long-polling mechanism is that it is simple and stateless. It's just a GET request with `If-None-Match` and [Prefer][prefer-rfc] headers:
 
 {% highlight http %}
 GET /path/to/object HTTP/1.1
 Host: example.com
 If-None-Match: "b1946ac9"
-Wait: 60
+Prefer: wait=60
 {% endhighlight %}
 
 There is no complicated socket session emulation. This means you can even use `curl`:
@@ -99,5 +99,6 @@ Q & A
 
    Go home. You're drunk.
 
+[prefer-rfc]: https://datatracker.ietf.org/doc/html/rfc7240
 [resthooks]: http://resthooks.org/
 [test-resource]: http://test.liveresource.org/test
