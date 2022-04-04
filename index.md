@@ -46,7 +46,7 @@ Prefer: wait=60
 There is no complicated socket session emulation. This means you can even use `curl`:
 
 {% highlight sh %}
-curl -i -H 'If-None-Match: "b1946ac9"' -H 'Wait: 60' \
+curl -i -H 'If-None-Match: "b1946ac9"' -H 'Prefer: wait=60' \
     http://example.com/path/to/object
 {% endhighlight %}
 
